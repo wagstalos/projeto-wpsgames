@@ -33,7 +33,7 @@
         flex-direction: column;
 
         .lead {
-            color: $brand-purple;
+            color: $gray-400;
             font-size: 1.6rem;
             font-weight: 500;
             border: 1px solid #d8d8d8;
@@ -51,6 +51,10 @@
             color: $black;
             max-width: 74rem;
             font-family: "Kanit", sans-serif;
+
+            strong {
+                color: $brand-purple;
+            }
         }
 
         .description {
@@ -179,7 +183,7 @@
     @include responsive(1024px) {
         &__text {
             .title {
-                font-size: 3rem;
+                font-size: 5rem;
                 line-height: 110%;
             }
         }
@@ -203,10 +207,11 @@
                 display: flex;
                 justify-content: center;
                 flex-direction: row;
+                font-size: 1.8rem;
             }
 
             .title {
-                font-size: 3rem;
+                font-size: 3.7rem;
             }
 
             .description {
