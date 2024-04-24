@@ -145,7 +145,7 @@
             width: 20%;
             right: 0;
 
-            z-index: 3;
+            z-index: 4;
             animation: moveUpDown2 5s infinite alternate;
         }
 
@@ -265,8 +265,12 @@
             }
 
             .img-4 {
-                width: 30%;
+                width: 40%;
                 z-index: 4;
+            }
+
+            .img-5 {
+                width: 40%;
             }
 
             video {
