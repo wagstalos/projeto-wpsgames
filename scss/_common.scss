@@ -34,11 +34,18 @@
     text-align: center;
 }
 
+.column {
+    flex-direction: column;
+}
+
+.align-end {
+    align-items: end;
+}
 .align-center {
     align-items: center;
 }
 
-.align-baseline{
+.align-baseline {
     align-items: baseline;
 }
 

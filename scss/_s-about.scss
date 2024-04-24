@@ -13,6 +13,35 @@
 
     &__image {
         width: 45%;
+        position: relative;
+
+        .tela-top {
+            position: absolute;
+            top: 4%;
+            right: 5%;
+        }
+
+        .tela1 {
+            position: absolute;
+            top: 26%;
+            right: -8%;
+            z-index: 2;
+            animation: moveUpDown 2s infinite alternate;
+        }
+
+        @keyframes moveUpDown {
+            0% {
+                right: -8%;
+            }
+            100% {
+                right: -4%;
+            }
+        }
+        .tela-bottom {
+            position: absolute;
+            bottom: 7%;
+            right: 5%;
+        }
     }
 
     &__text {
@@ -58,6 +87,17 @@
         &__image {
             width: 100%;
             margin-top: 4rem;
+
+            .tela-top {
+                width: 140px;
+            }
+
+            .tela1 {
+                width: 180px;
+            }
+            .tela-bottom {
+                width: 140px;
+            }
         }
 
         &__text {
