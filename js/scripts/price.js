@@ -10,14 +10,7 @@ function price() {
 
     success: function (data) {
       console.log(data);
-      // Verificar se 'normal' está presente nos dados e exibir o preço
-      //   if (data.length > 0 && data[0].hasOwnProperty("normal")) {
-      //     $(".js-normal").text(data[0].normal);
-      //     $(".js-premium").text(data[0].premium);
-      //   } else {
-      //     $(".js-normal").text("Consultar");
-      //     $(".js-premium").text("Consultar");
-      //   }
+
       $(".js-normal").text(data[0].normal);
       $(".js-premium").text(data[0].premium);
     },

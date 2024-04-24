@@ -1,6 +1,9 @@
 .s-about {
     padding: 90px 0;
     background-color: #f5f6ff;
+    margin: 50px;
+    border-radius: 40px;
+
     .d-flex {
         justify-content: space-between;
         flex-direction: row-reverse;
@@ -46,6 +49,7 @@
 
     // responsive
     @include responsive(800px) {
+        margin: 5px;
         .d-flex {
             flex-direction: column-reverse;
             margin-top: 2.5rem;
@@ -58,6 +62,11 @@
 
         &__text {
             width: 100%;
+
+            &-title {
+                text-align: center;
+                font-size: 2.5rem;
+            }
 
             .infos {
                 display: flex;

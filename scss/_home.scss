@@ -2,7 +2,6 @@
     width: 100%;
     padding-top: 16rem;
     padding-bottom: 16rem;
-    @include flex(row, center, center);
 
     background: linear-gradient(180deg, rgba(218, 247, 245, 0) 6.5%, #d1d6ff 60.89%, rgba(218, 247, 245, 0) 98.72%);
 
@@ -25,8 +24,8 @@
 
     &__text {
         margin-bottom: 3.9rem;
-        // width: 50%;
         text-align: center;
+
         display: flex;
         align-items: center;
         justify-content: center;
@@ -44,13 +43,13 @@
         }
 
         .title {
+            font-family: "Kanit", sans-serif;
             font-size: 7.5rem;
             line-height: 100%;
             font-weight: 600;
 
             color: $black;
             max-width: 74rem;
-            font-family: "Kanit", sans-serif;
 
             strong {
                 color: $brand-purple;

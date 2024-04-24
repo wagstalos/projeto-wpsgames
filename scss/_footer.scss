@@ -10,8 +10,15 @@ footer {
     z-index: 1;
     position: relative;
 
-    .footer_description {
-        max-width: 100%;
+    // .footer_description {
+    //     max-width: 50%;
+    // }
+
+    .footer-items {
+        &:first-child {
+            flex: 2;
+        }
+        flex: 1;
     }
 
     .d-flex {

@@ -1,0 +1,138 @@
+.s-projects {
+    padding: 90px 0;
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        // position: relative;
+        width: 40% !important;
+    }
+
+    .swiper-slide-active {
+        z-index: 1;
+    }
+    .title-case {
+        font-size: 3.4rem;
+    }
+
+    &__description {
+        max-width: 80rem;
+        margin: 0 auto;
+        text-align: center;
+        opacity: 0.8;
+
+        margin-bottom: 80px;
+    }
+
+    &__box {
+        justify-content: space-between;
+        margin-bottom: 80px;
+        &-items {
+            width: 32%;
+            text-align: center;
+            background-color: rgba(197, 190, 220, 0.1);
+            border-radius: 16px;
+            padding: 4px 16px 16px 16px;
+
+            img {
+                margin: 0 auto;
+            }
+
+            p {
+                opacity: 0.8;
+                margin-top: $gutter * 2;
+            }
+        }
+    }
+
+    &__items {
+        margin-top: 40px;
+
+        .bg-green-light {
+            background-color: #dcfffc;
+        }
+
+        .bg-yellow {
+            background-color: #fef1c5;
+        }
+
+        .bg-blue {
+            background-color: #d4ecfe;
+        }
+
+        .bg-purple {
+            background-color: #f5f6ff;
+        }
+
+        .bg-pink {
+            background-color: #fdf3ff;
+        }
+
+        .card {
+            img {
+                border-radius: 10px;
+            }
+
+            border: 1px solid #fdf3ff;
+            padding: 20px;
+            margin: 20px;
+
+            border-radius: 10px;
+
+            &-description {
+                display: flex;
+                justify-content: space-between;
+                align-items: unset;
+                margin-top: 30px;
+
+                a {
+                    font-size: 2rem;
+                    color: $brand-purple;
+                    font-weight: 700;
+
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    @include responsive(800px) {
+        .swiper-slide {
+            // position: relative;
+            width: 100% !important;
+        }
+
+        &__description {
+            max-width: 95%;
+        }
+
+        &__box {
+            flex-direction: column;
+
+            &-items {
+                width: 100%;
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
+
+.swiper {
+    &::after,
+    &::before {
+        max-height: 430px;
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 10%;
+        z-index: 1;
+    }
+
+    &::after {
+        background: linear-gradient(-90deg, $purple 3.59%, transparent);
+        right: -3px;
+    }
+}
