@@ -1,18 +1,6 @@
 .s-projects {
     padding: 90px 0;
-    // .swiper-container {
-    //     width: 100%;
-    //     height: 100%;
-    // }
 
-    // .swiper-slide {
-    //     // position: relative;
-    //     width: 40% !important;
-    // }
-
-    // .swiper-slide-active {
-    //     z-index: 1;
-    // }
     .title-case {
         font-size: 3.4rem;
         line-height: 100%;
@@ -31,21 +19,35 @@
     &__box {
         justify-content: space-between;
         margin-bottom: 80px;
+
         &-items {
             width: 32%;
-            text-align: center;
+            // text-align: center;
             background-color: rgba(197, 190, 220, 0.1);
+            border: 1px solid rgba(197, 190, 220, 0.1);
             border-radius: 16px;
-            padding: 4px 16px 16px 16px;
-            padding-top: 50px;
+            padding: 16px;
+            transition: all 0.3s ease;
+
+            &:hover {
+                border: 1px solid #d1d6ff;
+            }
 
             img {
-                margin: 0 auto;
+                // margin: 0 auto;
+                background-color: #fff;
+                padding: 5px;
+                border-radius: 8px;
+            }
+            h3 {
+                font-size: 2rem;
+                margin-top: 24px;
             }
 
             p {
                 opacity: 0.8;
                 margin-top: $gutter * 2;
+                font-size: 1.6rem;
             }
         }
     }
@@ -98,18 +100,34 @@
 
                     text-decoration: underline;
                 }
+                h3 {
+                    font-weight: 400;
+                }
             }
         }
     }
 
     @include responsive(800px) {
-        // .swiper-slide {
-        //     // position: relative;
-        //     width: 100% !important;
-        // }
+        .title-case {
+            font-size: 2.8rem;
+            line-height: 100%;
+        }
 
-        .card {
-            margin: 0;
+        &__items {
+            .card {
+                margin: 0;
+
+                &-description {
+                    h3 {
+                        font-size: 1.9rem;
+                    }
+
+                    p,
+                    a {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
         }
 
         &__description {
