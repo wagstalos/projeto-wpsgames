@@ -3,7 +3,7 @@
     background-color: #f5f7fa;
 
     .d-flex {
-        max-width: 80%;
+        max-width: 90%;
 
         margin: 0 auto;
         flex-wrap: wrap;
@@ -82,7 +82,6 @@
     @include responsive(800px) {
         .d-flex {
             flex-direction: column;
-
             .item {
                 width: 100%;
                 margin-bottom: $gutter * 2;

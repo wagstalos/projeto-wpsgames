@@ -51,7 +51,7 @@ header {
         }
     }
 
-    @include responsive(1024) {
+    @include responsive($laptop) {
         nav {
             ul {
                 li {
@@ -63,10 +63,16 @@ header {
         }
     }
 
-    @include responsive(840px) {
-        height: 7rem;
+    @include responsive($tablet) {
         display: flex;
         align-items: center;
+        width: 90%;
+        top: 10px;
+        left: 5%;
+        border: 1px #e9e9e9 solid;
+        height: 6rem;
+        border-radius: 40px;
+        box-shadow: #a9aaf32b 0px 20px 30px -10px;
         nav {
             ul {
                 display: none;
@@ -74,7 +80,9 @@ header {
         }
 
         .dots {
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .btn-secondary {
             display: none;
@@ -86,7 +94,7 @@ header {
     background: $white;
     border-radius: $border-radius * 2;
     width: 100%;
-    height: 50vh;
+    height: 100vh;
     position: fixed;
 
     right: 0;
@@ -148,10 +156,18 @@ header {
     background-color: $brand-purple;
     padding: $gutter;
     border-radius: $border-radius * 10;
-    margin-right: $gutter * 2;
+    margin-right: $gutter;
     display: none;
+
     // position: fixed;
     .icons-dots {
         display: none;
     }
+}
+
+.icons-mobile {
+    position: absolute;
+    bottom: 19px;
+    left: 50%;
+    transform: translate(-50%);
 }

@@ -32,10 +32,10 @@
         flex-direction: column;
 
         .lead {
-            color: $gray-400;
+            color: $brand-gray;
             font-size: 1.6rem;
-            font-weight: 500;
-            border: 1px solid #d8d8d8;
+            font-weight: 700;
+            // border: 1px solid #d8d8d8;
             padding: 2px 15px;
             border-radius: 50px;
 
@@ -221,6 +221,7 @@
             .lead {
                 align-items: center;
                 justify-content: center;
+                border: none;
                 span {
                     display: none;
                 }
