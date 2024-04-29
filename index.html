@@ -226,10 +226,13 @@
     <div class="container">
       <div class="d-flex">
 
-        <div class="s-hero__text" data-aos="fade-up" data-aos-duration="1000">
+        <div class="s-hero__text">
           <p class="lead">Bem-vindo(a) à WPS Digital 🤩</p>
-          <h1 class="title">
-            Transformando ideias <br> em <strong class="title">realidade digital</strong></h1>
+          <h1 class="title" id="my-text">
+            Transformando ideias em <strong class="title">realidade digital</strong></h1>
+
+
+          <!-- <h1 id="my-text">Wagner Silva</h1> -->
 
           <p class="description">
             Criando sites deslumbrantes e modernos há mais de uma década!
@@ -871,10 +874,23 @@
   <script src="js/lib/tilt.jquery.js"></script>
   <script src="js/all.js"></script>
 
-  <script>
-    AOS.init();
 
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <script>
+    // AOS.init();
   </script>
+
+  <script> const myText = new SplitType('#my-text')
+
+    gsap.to('.char', {
+      y: 0,
+      stagger: 0.05,
+      delay: 1,
+      duration: 0.3,
+
+    })</script>
 </body>
 
 </html>
