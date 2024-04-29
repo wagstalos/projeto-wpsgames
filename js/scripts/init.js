@@ -7,5 +7,11 @@ $(document).ready(function () {
     stagger: 0.05,
     delay: 1,
     duration: 0.3,
+    onComplete: function () {
+      gsap.to(".by-code", {
+        opacity: 1,
+      });
+    },
   });
 });
+
