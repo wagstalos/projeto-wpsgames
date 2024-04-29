@@ -15,8 +15,14 @@ header {
     }
 
     .btn-secondary {
-        padding: 2rem 2rem;
+        padding: 0.8rem 0.8rem;
         line-height: 0;
+
+        &:hover {
+            svg {
+                color: white;
+            }
+        }
     }
 
     nav {
