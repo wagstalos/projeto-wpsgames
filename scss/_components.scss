@@ -26,7 +26,6 @@ $animationSpeed: 40s;
     font-weight: 700;
 
     margin-top: -15px;
-    // background-color: #f9f8fb;
     border: 1px solid rgba(197, 190, 220, 0.1);
 
     &::before,
@@ -35,7 +34,7 @@ $animationSpeed: 40s;
         content: "";
         height: 100px;
         position: absolute;
-        width: 200px;
+        width: 100px;
         z-index: 2;
     }
 
