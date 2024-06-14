@@ -20,7 +20,7 @@ header {
 
         &:hover {
             svg {
-                color: white;
+                color: $white;
             }
         }
     }
@@ -47,11 +47,11 @@ header {
                     font-weight: 500;
                     font-size: 1.6rem;
                     line-height: 125%;
-                    color: rgb(64, 64, 64);
+                    color: $black;
                     opacity: 0.7;
                     transition: color 0.3s;
                     &:hover {
-                        color: $brand-purple;
+                        color: $brand-purple-dark;
                     }
                 }
             }
