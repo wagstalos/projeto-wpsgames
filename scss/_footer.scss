@@ -3,16 +3,10 @@ footer {
     color: #c6c5ce;
     border-top: 2px solid #ecf2fb;
     padding-top: 8rem;
-    font-size: 2rem;
     font-size: 1.4rem;
     line-height: 165%;
-
     z-index: 1;
     position: relative;
-
-    // .footer_description {
-    //     max-width: 50%;
-    // }
 
     .footer-items {
         &:first-child {
@@ -34,7 +28,7 @@ footer {
             margin: $gutter 0;
 
             &:hover {
-                color: $brand-green-light;
+                color: $brand-purple;
             }
         }
 
