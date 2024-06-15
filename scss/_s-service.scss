@@ -88,8 +88,9 @@
 
         .d-flex-price {
             display: flex;
-            margin-top: $gutter * 3;
+            margin-top: $gutter;
             justify-content: space-between;
+            align-items: center;
         }
 
         .price {
