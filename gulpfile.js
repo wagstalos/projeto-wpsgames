@@ -50,10 +50,10 @@ gulp.task("alljs", gulpJs);
 
 function pluginsJs() {
   return gulp
-    .src(["js/lib/aos.min.js", "./js/lib/swiper.min.js"])
-    .pipe(concat("plugins.js"))
-    .pipe(gulp.dest("js/"))
-    .pipe(browserSync.stream());
+    .src(["js/lib/aos.min.js", "js/lib/swiper.min.js"])
+    .pipe(concat("plugins.js")) // Concatenando os arquivos em plugins.js
+    .pipe(uglify()) // Minificando o JavaScript
+    .pipe(gulp.dest("js/")); // Salvando o arquivo minificado em js/
 }
 
 gulp.task("pluginjs", pluginsJs);
