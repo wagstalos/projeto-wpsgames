@@ -136,7 +136,7 @@
 
         .img-4 {
             position: absolute;
-            left: -2%;
+            left: 0;
             z-index: 3;
             animation: moveUpDown3 5s infinite alternate;
         }
@@ -274,7 +274,7 @@
 
             .img-5 {
                 display: none;
-                // width: 40%;
+                width: 40%;
             }
 
             // video {
