@@ -1,14 +1,27 @@
 header {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 7rem;
-    display: flex;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
+    // height: 7rem;
+    // display: flex;
     z-index: 12;
 
-    border-bottom: 2px solid #ecf2fb;
+    // border-bottom: 2px solid #ecf2fb;
     background-color: $white;
+
+    display: flex;
+    align-items: center;
+    width: 80%;
+    top: 10px;
+    left: 10%;
+    border: 1px #e9e9e9 solid;
+    height: 6rem;
+    border-radius: 40px;
+    box-shadow: #a9aaf32b 0px 20px 30px -10px;
+
+    backdrop-filter: blur(10px); /* Ajuste o valor de desfoque conforme necessário */
+    background-color: rgba(255, 255, 255, 0.5);
 
     .container {
         @include flex(row, center, space-between);
