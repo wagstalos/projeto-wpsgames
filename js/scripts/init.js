@@ -1,6 +1,7 @@
 $(document).ready(function () {
-  //função para abrir e fechar menu lateral
   AOS.init();
+
+  //animação hero GSAP
   const myText = new SplitType("#my-text");
   gsap.to(".char", {
     y: 0,
@@ -14,4 +15,3 @@ $(document).ready(function () {
     },
   });
 });
-

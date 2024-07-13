@@ -2,6 +2,7 @@ var swiper2 = new Swiper(".mySwiper", {
   spaceBetween: 10,
   freeMode: false,
   slidesPerView: 1.1,
+  speed: 800,
 
   autoplay: {
     delay: 5000, // tempo em milissegundos entre os slides

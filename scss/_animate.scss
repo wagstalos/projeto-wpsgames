@@ -18,23 +18,29 @@
         width: 0;
     }
 }
+
+#loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
 .terminal-loader {
     border: 0.1em solid #333;
     background-color: #1a1a1a;
     color: #0f0;
     font-family: "Courier New", Courier, monospace;
     font-size: 1em;
-    padding: 2em 1em;
+    padding: 2.5em 2em;
     width: 20em;
+    margin: 0; /* Remove the margin to center perfectly */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
     overflow: hidden;
     box-sizing: border-box;
-    z-index: 9999;
 }
 
 .terminal-header {
