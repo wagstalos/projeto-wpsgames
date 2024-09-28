@@ -3,7 +3,6 @@
     background-color: #f5f6ff;
     margin: 50px;
     border-radius: 40px;
-
     .d-flex {
         justify-content: space-between;
 
@@ -12,18 +11,18 @@
     }
 
     &__image {
-        width: 45%;
+        width: 40%;
         position: relative;
 
         .tela-top {
             position: absolute;
             top: 4%;
-            right: 5%;
+            right: 0;
         }
 
         .tela1 {
             position: absolute;
-            top: 26%;
+            top: 29%;
             right: -8%;
             z-index: 2;
             animation: moveUpDown 2s infinite alternate;
