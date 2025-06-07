@@ -54,6 +54,10 @@
     align-items: baseline;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
 .text-dark {
     color: $gray-600;
 }
@@ -69,7 +73,7 @@
 .btn-whats {
     display: none;
     position: fixed;
-    bottom: 97px;
+    bottom: 40px;
     right: 28px;
     background-color: #25cb9e;
     padding: 12px 14px 7px 13px;
@@ -105,6 +109,13 @@
     margin-top: 3rem;
 }
 
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
 .mr-1 {
     margin-right: 0.25rem;
 }
@@ -226,4 +237,48 @@
 .my-auto {
     margin-top: auto;
     margin-bottom: auto;
+}
+
+//slider
+#comentarios {
+    .swiper-scrollbar {
+        display: none;
+    }
+
+    .swiper {
+        padding: 20px;
+        padding-bottom: 40px;
+    }
+
+    .swiper-button-next {
+        position: absolute;
+        left: auto;
+        right: 3px !important;
+        top: 45% !important;
+        box-shadow: #a9aaf0 0px 2px 6px -2px;
+        border: none;
+    }
+
+    .swiper-button-prev {
+        position: absolute;
+        left: 3px;
+        // right: 80px !important;
+        top: 45% !important;
+        border: none;
+        box-shadow: #a9aaf0 0px 2px 6px -2px;
+    }
+
+    .card {
+        background-color: #f5f7fa;
+        padding: 16px;
+        border-radius: 10px;
+        height: 170px;
+        overflow-y: auto;
+    }
+    .nota {
+        font-size: 16px;
+    }
+    .nome {
+        margin-bottom: $gutter;
+    }
 }

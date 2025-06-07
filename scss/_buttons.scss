@@ -45,3 +45,28 @@
         font-size: 1.5rem;
     }
 }
+
+.btn-avaliar {
+    color: #4d5156;
+    border: #d2d2d2 1px solid;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    font-size: 1.6rem;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.btn-seemore {
+    font-size: 1.6rem;
+    color: #1a73e8;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.buttons_google_reviews {
+    display: flex;
+    align-items: anchor-center;
+}
