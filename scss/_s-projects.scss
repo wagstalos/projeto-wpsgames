@@ -1,6 +1,10 @@
 .s-projects {
     padding: 90px 0;
 
+    .container {
+        margin-bottom: 80px;
+    }
+
     .title-case {
         font-size: 3.4rem;
         line-height: 100%;
@@ -77,6 +81,7 @@
 
         .card {
             img {
+                margin-top: -50px;
                 border-radius: 10px;
             }
 
